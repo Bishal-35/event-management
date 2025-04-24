@@ -70,7 +70,7 @@ A web-based event management application built with Node.js, Express, and MySQL 
    ```
    or with nodemon:
    ```
-   npx nodemon index.js
+   nodemon index.js
    ```
 
 6. Access the application at `http://localhost:8080`
