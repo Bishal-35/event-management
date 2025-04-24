@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Event Details</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Delete Confirmation</h2>
+        
+        <div class="warning">
+            <h3>You are about to delete the event: <%= event.name %></h3>
+            <p>This action cannot be undone.</p>
+        </div>
+        
+        <div class="buttons">
+            <form action="/delete/<%= event.id %>" method="POST">
+                <button type="submit" class="delete-btn">Confirm Delete</button>
+            </form>
+            <a href="/" class="btn cancel-btn">Cancel</a>
+        </div>
+    </div>
+</body>
+</html>

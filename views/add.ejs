@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Event</h2>
+        
+        <form action="/add" method="POST">
+            <input name="id" type="text" placeholder="enter id" >
+            <input name="name" type="text" placeholder="enter Event name" />
+            <input name="date" type="date" placeholder="enter Event date" />
+            <input name="time" type="time" placeholder="enter Event time" />
+            <div class="form-group">
+                <button type="submit">Add Event</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

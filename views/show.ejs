@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Details</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Event Details</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Event Date</th>
+                    <th>Event Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= event.name %></td>
+                    <td><%= event.date %></td>
+                    <td><%= event.time %></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <a href="/">Back to Events</a>
+    </div>
+</body>
+</html>

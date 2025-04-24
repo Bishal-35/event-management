@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event Details</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Event</h1>
+        
+        <form action="/edit/<%= event.id %>" method="POST">
+            <div class="form-group">
+                <label for="id">Event ID:</label>
+                <input type="text" id="id" name="id" value="<%= event.id %>" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Event Name:</label>
+                <input type="text" id="name" name="name" value="<%= event.name %>" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" value="<%= event.date.toISOString().split('T')[0] %>" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" value="<%= event.time %>" required>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" class="btn">Save Changes</button>
+                <a href="/" class="btn cancel-btn">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
